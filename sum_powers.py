@@ -1,8 +1,8 @@
 user_input = raw_input("enter a float number: ")
-b = int(user_input)
+b = float(user_input)
 while b == 1.0:
     user_input = raw_input("enter a float number not equal to 1.0: ")
-    b = int(user_input)
+    b = float(user_input)
 
 user_input = raw_input("enter a natural number: ")
 n = int(user_input)
@@ -14,4 +14,4 @@ while i <= n:
     i += 1
 
 print subt
-print b**(n+1)/(b-1)
+print (b**(n+1)-1)/(b-1)
